@@ -107,10 +107,7 @@ Please install or have installed the following:
 
 ### Art generation
 
-After installing node open a terminal in your code editor (VS Code for example) and clone this repository :
-   ```sh
-   git clone https://github.com/kaymen99/ClassyDogs-NFT-Project.git
-   cd ClassyDogs-NFT-Project
+
    ```
 
 Then install the art engine dependancies by running :
@@ -119,9 +116,7 @@ Then install the art engine dependancies by running :
    yarn
    ```
    
-This will install all the libraries needed for creating the nfts, the next step is to add the differents layers, the art used for this collection is not of my creation, the orginal images can be downloaded [here](https://www.firevectors.com/2022/03/free-nft-layers-download.html?m=1) or you can use the ones i already edited and added rarities to them (the folder size was too big so i couldn't upload to Github), you can get them from Google drive with this [link](https://drive.google.com/drive/folders/1za0Wg11BrowiIOaWEGb2UE4fJexoJi5e?usp=sharing).
 
-In the config file you can change the collection name and description (if you want), you can choose how many items you want to generate by changing the `growEditionSizeTo` variable and also the images size (format).
 
 After finishing the configuration run the command to generate the items :
    ```sh
@@ -141,7 +136,6 @@ Now upload the final json folder to IPFS as you did with images folder.
 
 Finally in the build folder you'll also find a hidden folder which contains the hidden NFT image & metadata used in the collection pre-reveal step,the hidden image must be uploaded to IPFS and its CID should be copied to the hidden metadata file which in the end must also be uploaded to IPFS to get the final hidden NFT URI. 
 
-If you find problems going through the upload part you can refere back to hashlips Youtube video which explain each step perfectly [How to create an NFT collection - Masterclass](https://www.youtube.com/watch?v=Zhmj4PiJ-GA)
 
 ### Contracts
 
@@ -159,9 +153,7 @@ Next you need to setup the environement variables in the .env file, this are use
     MUMBAI_RPC_URL="Your mumbai RPC url from alchemy or infura"
     PRIVATE_KEY="your private key"
    ```
-* <b>NOTE :</b> Only the private key is needed when deploying to the ganache network, the others variables are for deploying to the testnets or real networks and etherscan api key is for verifying your contracts on rinkeby etherscan.
-
-Then in the config folder you'll find the collection config file where you must add the NFT name & decription and the IPFS CID for both the nfts and the hidden nft those you get from pinata, you can also change the minting cost and the maximum supply.
+ the IPFS CID for both the nfts and the hidden nft those you get from pinata, you can also change the minting cost and the maximum supply.
    ```sh
     tokenName: "Classy Dogs Collection",
     tokenSymbol: 'CD',
@@ -184,18 +176,9 @@ Then in the config folder you'll find the collection config file where you must 
 
 After going through all the configuration step, you'll need to deploy the smart contract to the ganache network by running: 
    ```sh
-   yarn deploy --network ganache
+   yarn deploy --network bscnetwork
    ```
-This will create a config.js file and an artifacts folder and transfer them to the src folder to enable the interaction between the contract and the UI
 
-* <b>IMPORTANT :</b> I used the ganache network for development purposes only, you can choose another testnet or real network if you want, for that you need to add it to the hardhat.config file for example for the polygon mumbai testnet : 
-
-   ```sh
-   mumbai: {
-     url: MUMBAI_RPC_URL,
-     accounts: [process.env.PRIVATE_KEY],
-     chainId: 80001,
-   }
    ```
 
 If you want to test the functionnalities of the NFT contract you can do it by running:
@@ -211,28 +194,5 @@ To start the user interface just run the following commands :
    yarn start
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- Ressources -->
-## Ressources
-
-If you want to learn more about NFT projects, these great tutorials may help:
-* [How to create an NFT collection - Masterclass](https://www.youtube.com/watch?v=Zhmj4PiJ-GA) by hashlips
-* [BEST NFT Collection Minting Site (dApp) - Entire Process! Whitelist & Launch a Collection (10,000+)](https://www.youtube.com/watch?v=cLB7u0KQFIs&t=270s)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- Contact -->
-## Contact
-
-If you have any question or problem running this project just contact me: aymenMir1001@gmail.com
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
