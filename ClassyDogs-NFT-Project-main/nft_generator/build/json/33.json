@@ -1,0 +1,38 @@
+{
+  "name": "The Classy Dogs #33",
+  "description": "No more kitties, here comes the Classy Dogs",
+  "image": "ipfs://QmcKmG3ht3d7nSmurmnAkjsLaxsgUxBVFMTJoTUJzvkzVY/33.png",
+  "dna": "a4e770695c012b58de9e2186e353d70dea3371b3",
+  "edition": 33,
+  "date": 1657135399034,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "green"
+    },
+    {
+      "trait_type": "Body",
+      "value": "black"
+    },
+    {
+      "trait_type": "Mouths",
+      "value": "normal"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "normal"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "black"
+    },
+    {
+      "trait_type": "Outfits",
+      "value": "christmas shirt"
+    },
+    {
+      "trait_type": "Beard and mustache",
+      "value": "black beard"
+    }
+  ]
+}

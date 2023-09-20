@@ -1,0 +1,38 @@
+{
+  "name": "The Classy Dogs #27",
+  "description": "No more kitties, here comes the Classy Dogs",
+  "image": "ipfs://QmcKmG3ht3d7nSmurmnAkjsLaxsgUxBVFMTJoTUJzvkzVY/27.png",
+  "dna": "e66a09c65eb110d881d35a657c12df3f94db0c15",
+  "edition": 27,
+  "date": 1657135385525,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "pink"
+    },
+    {
+      "trait_type": "Body",
+      "value": "black"
+    },
+    {
+      "trait_type": "Mouths",
+      "value": "smiley"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "normal"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "red"
+    },
+    {
+      "trait_type": "Outfits",
+      "value": "black tank top"
+    },
+    {
+      "trait_type": "Beard and mustache",
+      "value": "orange"
+    }
+  ]
+}

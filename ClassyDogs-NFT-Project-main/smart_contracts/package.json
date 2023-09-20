@@ -1,0 +1,37 @@
+{
+  "name": "smart_contracts",
+  "version": "1.0.0",
+  "description": "NFT smart contracts deployments, testing ",
+  "main": "index.js",
+  "author": "Aymen1001",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy-nftContract.js",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "chai": "^4.3.6",
+    "erc721a": "^4.1.0",
+    "ethers": "^5.6.9",
+    "fs-extra": "^10.1.0",
+    "hardhat": "^2.9.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.32",
+    "truffle": "^5.11.5",
+    "truffle-plugin-verify": "^0.6.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "dotenv": "^16.0.1",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^1.0.8"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
